@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unplanned service</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1380ae2a48.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="container-lg container-sm">
+        <header class="header row">
+            <div class="col-sm-12 col-lg-6 col-md-6">
+                <span class="bold">My equipment </span>
+                <i class="fas fa-chevron-right"></i>
+                <span> Unplanned service</span>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-md-6">
+                <button type="button" class="btn btn-danger">CREATE SERVICE REQUEST <i class="fas fa-plus"></i></button>
+            </div>
+        </header>
+        <main class="main row">
+            
+          <section class="col-sm-12 col-lg-6 col-md-6">
+
+            <div class="row item-align">
+                <span><span class="bold">Open</span> Requests </span><span class="small-text">last 90 days</span>
+            </div> 
+                       
+            <div class="row">
+              <div class="col-sm-12 col-md-6 text-center">
+                  <svg viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="semicircle__background" stroke="pink" stroke-width="2" stroke-dasharray="50,50" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                    <circle class="semicircle" stroke="red" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                    <g>
+                      <text x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" fill="#0062cc" font-size="8">14</text> 
+                    </g>
+                  </svg>
+              </div>
+              <ul class="col-sm-12 col-md-6 error row">
+                  <li class="row critical col-sm-6 col-md-12">
+                    <div class="counter col-2">4</div>
+                    <div class="col-10">
+                      <h3>critical</h3>
+                      <div class="notice"><strong>3</strong> Machines impacted</i>
+                    </div>
+                    
+                  </li>
+                  <li class="row non-critical col-sm-6 col-md-12">
+                      <div class="counter col-2">10</div>
+                      <div class="col-10">
+                        <h3>Non-critical</h3>
+                        <div class="notice"><strong>8</strong> Machines impacted</i>
+                      </div>
+                      
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+              <span><span class="bold">Show me</span> oldest open requests <i class="fas fa-chevron-down"></i></span>
+            </div>
+          </section>
+
+          <section class="col-sm-12 col-lg-6 col-md-6 border-line">
+
+              <div class="row item-align">
+                  <span><span class="bold">Completed</span> Requests </span><span class="small-text">last 7 days</span>
+              </div> 
+                         
+              <div class="row">
+                <div class="col-sm-12 col-md-6 text-center">
+                    <svg viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="semicircle__background" stroke="#88e67c" stroke-width="2" stroke-dasharray="50,50" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                      <circle class="semicircle" stroke="green" stroke-width="2" stroke-dasharray="15,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                      <g>
+                        <text x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" fill="#0062cc" font-size="8">7</text> 
+                      </g>
+                    </svg>
+                </div>
+                <ul class="col-sm-12 col-md-6 good row">
+                    <li class="row critical col-sm-6 col-md-12">
+                      <div class="counter col-2">4</div>
+                      <div class="col-10">
+                        <h3>critical</h3>
+                        <div class="notice"><strong>3</strong> Machines impacted</i>
+                      </div>
+                      
+                    </li>
+                    <li class="row non-critical col-sm-6 col-md-12">
+                        <div class="counter col-2">10</div>
+                        <div class="col-10">
+                          <h3>Non-critical</h3>
+                          <div class="notice"><strong>8</strong> Machines impacted</i>
+                        </div>
+                        
+                      </li>
+                  </ul>
+              </div>
+  
+              <div class="row">
+                <span><span class="bold">Show me</span> recently completed service <i class="fas fa-chevron-down"></i></span>
+              </div>
+            </section>
+        </main>
+        <button type="button" class="btn btn-outline-primary d-md-none float-right">TRACK SERVICE <i class="fas fa-chevron-right"></i></button>
+    </div>
+
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+

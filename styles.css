@@ -1,0 +1,108 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+}
+
+.header {
+  margin: 30px 15px 20px 0px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.small-text {
+  font-size: 0.5em;
+  color: #808080;
+  margin-left: 15px;
+}
+
+.border-line {
+  border-left: 1px solid #aeaeae;
+  padding-left: 30px; 
+  margin-left: -30px;
+}
+
+.item-align {
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.semicircle {
+  animation: circle-chart-fill 2s reverse; 
+  transform: rotate(-180deg); 
+  transform-origin: center; 
+}
+
+.semicircle__background {
+  transform: rotate(-180deg);
+  transform-origin: center; 
+}
+
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0  100; }
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color:#0062cc;
+}
+
+ul li::before {
+  content: "\f111";
+  font-weight: bold;
+  font-family: "Font Awesome 5 Pro";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  position: absolute;
+}
+
+ul.error li.critical::before {
+  color:red;
+}
+
+ul.error li.non-critical::before {
+  color:pink;
+}
+
+ul.good li.critical::before {
+  color:green;
+}
+
+ul.good li.non-critical::before {
+  color:#88e67c;
+}
+
+.counter {
+  font-size: 1.4em;
+  line-height: 1em;
+}
+
+.notice {
+  font-size: 0.7em;
+  color: black;
+}
+
+ul li div i {
+  display: block;
+}
+
+ul h3 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .border-line {
+    margin: 30px 0px;
+    padding-top: 20px;
+    padding-left: 15px;
+    border-left: 0 none;
+    border-top: 1px solid #aeaeae;
+  }
+}
